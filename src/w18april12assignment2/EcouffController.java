@@ -70,9 +70,13 @@ public class EcouffController implements Initializable {
 
         try {
             if (checkBox.isSelected()) {
+                
+                /*Creating a new instance of File to write in a .txt */
                 File file = new File("Athlete.txt");
                 FileWriter escrever = new FileWriter(file, true);
                 PrintWriter printar = new PrintWriter(escrever);
+                
+                /*If's so none of the fields it's empty when submitting */
 
                 if (genderComboBox.getSelectionModel().isEmpty()) {
                     this.genderComboBox.setValue("");
@@ -97,7 +101,8 @@ public class EcouffController implements Initializable {
                 if (dateEnrolledDatePicker.getValue() == null) {
                     this.dateEnrolledDatePicker.setValue(LocalDate.now().plusDays(2));
                 }
-
+                
+                /*Creating a new instance of Athlete class*/
                 Athlete newAthlete = new Athlete(this.firstNameTextField.getText(),
                         this.lastNameTextField.getText(),
                         this.genderComboBox.getValue(),
@@ -114,6 +119,8 @@ public class EcouffController implements Initializable {
                         this.dateEnrolledDatePicker.getValue(),
                         this.studentNumberTextField.getText());
 
+                /*Printing to a .txt file */
+                
                 printar.println(newAthlete.toString());
                 printar.close();
 
@@ -122,6 +129,8 @@ public class EcouffController implements Initializable {
             } else {
                 throw new IllegalArgumentException("You should click in the check box");
             }
+            
+            /*Catching the exceptions*/
         } catch (IllegalArgumentException | FileNotFoundException e) {
             this.expLabel.setText(e.getMessage());
         }
@@ -132,8 +141,9 @@ public class EcouffController implements Initializable {
      * Initializes the controller class.
      */
     @Override
-    public void initialize(URL url, ResourceBundle rb
-    ) {
+    public void initialize(URL url, ResourceBundle rb) {
+        
+        /* Filling the comboBox with data */
 
         List sports = Arrays.asList("Basketball", "Handball", "Volleyball", "Soccer", "Swimming", "Table Tennis");
         this.sportComboBox.getItems().addAll(sports);

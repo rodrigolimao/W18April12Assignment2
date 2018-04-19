@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="670.0" prefWidth="625.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.4" fx:controller="w18april12assignment2.EcouffController">
+    <stylesheets>
+        <URL value="@ecouff.css" />
+    </stylesheets>
+   <children>
+      <VBox layoutX="39.5" layoutY="118.5" prefHeight="670.0" prefWidth="625.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <GridPane gridLinesVisible="true" maxHeight="700.0" maxWidth="700.0" minHeight="20.0" minWidth="20.0" prefHeight="397.0" prefWidth="540.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="183.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="238.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="33.0" minHeight="10.0" prefHeight="26.0" valignment="CENTER" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="35.0" minHeight="2.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+                  <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+                  <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+                  <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+                  <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+                  <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+                  <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+                  <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+                  <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+                  <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+                  <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+                  <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="32.0" valignment="CENTER" />
+                  <RowConstraints maxHeight="47.0" minHeight="0.0" prefHeight="0.0" valignment="CENTER" />
+              </rowConstraints>
+               <children>
+                  <Label text="First Name" textFill="#ffbe0f">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Last Name" textFill="#ffbe0f" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Gender" textFill="#ffbe0f" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Shift" textFill="#ffbe0f" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Sport" textFill="#ffbe0f" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Phone" textFill="#ffbe0f" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Street Address" textFill="#ffbe0f" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="State" textFill="#ffbe0f" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="City" textFill="#ffbe0f" GridPane.rowIndex="9">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Postal Code" textFill="#ffbe0f" GridPane.rowIndex="10">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="193.0" text="Entering Date in Athletics" textFill="#ffbe0f" GridPane.rowIndex="11">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Date of Birth" textFill="#ffbe0f" GridPane.rowIndex="12">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Date Enrolled in University" textFill="#ffbe0f" GridPane.rowIndex="13">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Student Number" textFill="#ffbe0f" GridPane.rowIndex="14">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Height (cm)" textFill="#ffbe0f" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <ComboBox fx:id="sportComboBox" prefHeight="27.0" prefWidth="200.0" promptText="Tell me your sport" styleClass="grid-pane" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <ComboBox fx:id="genderComboBox" prefHeight="27.0" prefWidth="199.0" promptText="Pick one Gender" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <ComboBox fx:id="shiftComboBox" minHeight="0.0" minWidth="0.0" prefHeight="26.0" prefWidth="199.0" promptText="What's your Shift?" styleClass="grid-pane" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="firstNameTextField" GridPane.columnIndex="1" />
+                  <TextField fx:id="lastNameTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="phoneTextField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextField fx:id="streetTextField" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <TextField fx:id="stateTextField" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <TextField fx:id="cityTextField" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <TextField fx:id="postalCodeTextField" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <TextField fx:id="studentNumberTextField" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                  <TextField fx:id="heightTextField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <DatePicker fx:id="enterigDatePicker" opacity="0.87" prefHeight="26.0" prefWidth="201.0" showWeekNumbers="true" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </DatePicker>
+                  <DatePicker fx:id="dateofBirthDatePicker" opacity="0.85" prefHeight="26.0" prefWidth="202.0" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="12">
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" />
+                     </effect>
+                  </DatePicker>
+                  <DatePicker fx:id="dateEnrolledDatePicker" opacity="0.86" prefHeight="26.0" prefWidth="201.0" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="13">
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" />
+                     </effect>
+                  </DatePicker>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="20.0" top="20.0" />
+               </opaqueInsets>
+            </GridPane>
+            <CheckBox fx:id="checkBox" mnemonicParsing="false" prefHeight="78.0" prefWidth="485.0" text="Click here if you want to join Tubaroes ECO UFF - The biggest Athletics" textFill="#ffbb0f">
+               <padding>
+                  <Insets bottom="30.0" top="30.0" />
+               </padding>
+            </CheckBox>
+            <Button mnemonicParsing="false" onAction="#createContactButtonPushed" prefHeight="43.0" prefWidth="216.0" text="Create Athlete" textFill="#ffbe0f" underline="true">
+               <VBox.margin>
+                  <Insets bottom="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" height="11.89" radius="46.427499999999995" width="175.82" />
+               </effect>
+            </Button>
+            <Label fx:id="expLabel" textFill="#e10909" />
+            <TextField fx:id="exceptionField" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="35.0" right="50.0" top="80.0" />
+         </padding>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </VBox>
+   </children>
+</AnchorPane>
